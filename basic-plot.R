@@ -32,8 +32,10 @@ smoke_preg_plot <-
   xlab("") +
   scale_fill_jco() +
   scale_color_jco() +
-  theme_bw() +
-  theme(panel.grid.minor = element_blank(),
+  theme_pubr() +
+  theme(panel.grid.major.x = element_line(color = "grey80",
+                                          linetype = "dashed"),
+        axis.title.x = element_blank(),
         axis.ticks.x = element_blank(),
         axis.text.x = element_blank())
 
@@ -49,8 +51,10 @@ smoke_2w_plot <-
   xlab("Odds ratio (log base 10 scale)") +
   scale_fill_jco() +
   scale_color_jco() +
-  theme_bw() +
-  theme(panel.grid.minor = element_blank())
+  theme_pubr() +
+  theme(panel.grid.major.x = element_line(color = "grey80",
+                                          linetype = "longdash"),
+        legend.position = "none")
 
 ggarrange(smoke_preg_plot, smoke_2w_plot, ncol = 1, 
           common.legend = TRUE, align = "hv",
@@ -86,8 +90,10 @@ sleep_back_plot <-
   xlab("") +
   scale_fill_jco() +
   scale_color_jco() +
-  theme_bw() +
-  theme(panel.grid.minor = element_blank(),
+  theme_pubr() +
+  theme(panel.grid.major.x = element_line(color = "grey80",
+                                          linetype = "dashed"),
+        axis.title.x = element_blank(),
         axis.ticks.x = element_blank(),
         axis.text.x = element_blank())
 
@@ -103,8 +109,10 @@ sleep_any_plot <-
   xlab("Odds ratio (log base 10 scale)") +
   scale_fill_jco() +
   scale_color_jco() +
-  theme_bw() +
-  theme(panel.grid.minor = element_blank())
+  theme_pubr() +
+  theme(panel.grid.major.x = element_line(color = "grey80",
+                                          linetype = "longdash"),
+        legend.position = "none")
 
 ggarrange(sleep_back_plot, sleep_any_plot, ncol = 1, 
           common.legend = TRUE, align = "hv",
@@ -140,7 +148,10 @@ bf_any_plot <-
   scale_fill_jco() +
   scale_color_jco() +
   theme_bw() +
-  theme(panel.grid.minor = element_blank(),
+  theme_pubr() +
+  theme(panel.grid.major.x = element_line(color = "grey80",
+                                          linetype = "dashed"),
+        axis.title.x = element_blank(),
         axis.ticks.x = element_blank(),
         axis.text.x = element_blank())
 
@@ -156,8 +167,10 @@ bf_exclusive_plot <-
   xlab("Odds ratio (log base 10 scale)") +
   scale_fill_jco() +
   scale_color_jco() +
-  theme_bw() +
-  theme(panel.grid.minor = element_blank())
+  theme_pubr() +
+  theme(panel.grid.major.x = element_line(color = "grey80",
+                                          linetype = "longdash"),
+        legend.position = "none")
 
 ggarrange(bf_any_plot, bf_exclusive_plot, ncol = 1, 
           common.legend = TRUE, align = "hv",
@@ -188,8 +201,10 @@ bed_sharing_plot <-
   xlab("Odds ratio (log base 10 scale)") +
   scale_fill_jco() +
   scale_color_jco() +
-  theme_bw() +
-  theme(panel.grid.minor = element_blank())
+  theme_pubr() +
+  theme(panel.grid.major.x = element_line(color = "grey80",
+                                          linetype = "longdash"),
+        legend.position = "none")
 
 ggarrange(bed_sharing_plot, ncol = 1, 
           common.legend = TRUE, align = "hv",
