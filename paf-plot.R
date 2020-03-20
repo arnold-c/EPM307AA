@@ -7,20 +7,30 @@ library(ggsci)
 paf <- read_excel(here::here("data", "risk-factors.xlsx"), 
                          sheet = "PAF")
 
-order <- c("Smoking during pregnancy", "Bed sharing", 
-           "Prone sleeping position", "Not breast feeding at any stage of life")
+paf %<>%
+  mutate(Exposure = case_when(
+    Exposure == "Not breast feeding at any stage of life" ~
+    "Not breast feeding \nat any stage of life",
+    Exposure == "Prone sleeping position" ~ "Prone sleeping \nposition",
+    Exposure == "Smoking during pregnancy" ~ "Smoking during \npregnancy",
+    TRUE ~ Exposure))
+
+order <- c("Not breast feeding \nat any stage of life", "Prone sleeping \nposition",
+           "Bed sharing", "Smoking during \npregnancy")
 
 paf$Exposure <- factor(paf$Exposure, levels = order)
 
 paf_plot <- ggplot(data = paf) +
-  geom_bar(aes(x = Exposure, y = PAF, fill = Study), 
+  geom_bar(aes(x = PAF, y = Exposure, fill = Study), 
            alpha = 0.7, color = "black",
            stat = "identity", position = "dodge") +
   scale_fill_jco() +
   scale_color_jco() +
-  ylab("Population Attributable Fractions (%)") +
+  ylab("Population Attributable Fraction (%)") +
   theme_pubr() +
-  theme(panel.grid.major.y = element_line(color = "grey80",
+  theme(panel.grid.major.x = element_line(color = "grey80",
+                                          linetype = "dashed"),
+        panel.grid.minor.x = element_line(color = "grey80",
                                           linetype = "dashed"))
 
 paf_table <- paf %>%
