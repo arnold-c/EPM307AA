@@ -56,6 +56,7 @@ ggarrange(paf_plot,
           ggarrange(paf_table_p, or_table_p, 
                     nrow = 2,
                     labels = c("Population Attributable Fraction (%)",
-                               "Odds Ratio (Univariate)")),
+                               "Odds Ratio (Univariate)"),
+                    hjust = c(-0.3, -0.8)),
           ncol = 2)
 
