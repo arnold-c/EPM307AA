@@ -203,8 +203,7 @@ bed_sharing_plot <-
   scale_color_jco() +
   theme_pubr() +
   theme(panel.grid.major.x = element_line(color = "grey80",
-                                          linetype = "longdash"),
-        legend.position = "none")
+                                          linetype = "longdash"))
 
 ggarrange(bed_sharing_plot, ncol = 1, 
           common.legend = TRUE, align = "hv",

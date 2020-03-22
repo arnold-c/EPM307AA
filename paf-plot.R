@@ -2,7 +2,6 @@ library(tidyverse)
 library(readxl)
 library(magrittr)
 library(ggpubr)
-library(ggsci)
 
 paf <- read_excel(here::here("data", "risk-factors.xlsx"), 
                          sheet = "PAF")
@@ -24,8 +23,8 @@ paf_plot <- ggplot(data = paf) +
   geom_bar(aes(x = PAF, y = Exposure, fill = Study), 
            alpha = 0.7, color = "black",
            stat = "identity", position = "dodge") +
-  scale_fill_jco() +
-  scale_color_jco() +
+  scale_fill_manual(values = c("#0073C2FF", "#868686FF")) +
+  scale_color_manual(values = c("#0073C2FF", "#868686FF")) +
   ylab("Population Attributable Fraction (%)") +
   theme_pubr() +
   theme(panel.grid.major.x = element_line(color = "grey80",
@@ -57,6 +56,6 @@ ggarrange(paf_plot,
                     nrow = 2,
                     labels = c("Population Attributable Fraction (%)",
                                "Odds Ratio (Univariate)"),
-                    hjust = c(-0.3, -0.8)),
+                    hjust = c(-0.32, -0.75)),
           ncol = 2)
 
