@@ -40,8 +40,8 @@ count_plot <- ggplot(data = df) +
   geom_bar(aes(x = Year, y = Number, fill = Type),
            alpha = 0.7, color = "black",
            stat = "identity", position = "dodge") +
-  scale_fill_jco() +
-  scale_color_jco() +
+  scale_fill_manual(values = c("#0073C2FF", "#868686FF")) +
+  scale_color_manual(values = c("#0073C2FF", "#868686FF")) +
   theme_pubr() +
   theme(panel.grid.major.y = element_line(color = "grey80",
                                           linetype = "dashed"),
@@ -56,8 +56,8 @@ incidence_plot <- ggplot(data = df) +
   geom_point(aes(x = Year, y = Rate, color = Type, fill = Type), 
              shape = 21, color = "black", size = 2.5) +
   scale_x_continuous(breaks = seq(2006, 2015, 1), labels = seq(2006, 2015, 1)) +
-  scale_fill_jco() +
-  scale_color_jco() +
+  scale_fill_manual(values = c("#0073C2FF", "#868686FF")) +
+  scale_color_manual(values = c("#0073C2FF", "#868686FF")) +
   theme_pubr() +
   theme(panel.grid.major.y = element_line(color = "grey80",
                                           linetype = "longdash"),
