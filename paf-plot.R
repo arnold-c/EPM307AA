@@ -16,7 +16,7 @@ paf %<>%
     TRUE ~ Exposure))
 
 order <- c("Not breast feeding \nat any stage of life", "Prone sleeping \nposition",
-           "Bed sharing", "Not sharing \nparental bedroom",
+           "Not sharing \nparental bedroom", "Bed sharing",
            "Smoking during \npregnancy")
 
 paf$Exposure <- factor(paf$Exposure, levels = order)
