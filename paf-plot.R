@@ -28,7 +28,8 @@ paf_plot <- ggplot(data = paf) +
            position = position_dodge2(padding = 0, preserve = "single")) +
   scale_fill_manual(values = c("#0073C2FF", "#868686FF")) +
   scale_color_manual(values = c("#0073C2FF", "#868686FF")) +
-  ylab("Population Attributable Fraction (%)") +
+  xlab("Population Attributable Fraction (%)") +
+  ylab("Exposure") +
   theme_pubr() +
   theme(panel.grid.major.x = element_line(color = "grey80",
                                           linetype = "dashed"),
