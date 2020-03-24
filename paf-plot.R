@@ -12,17 +12,20 @@ paf %<>%
     "Not breast feeding \nat any stage of life",
     Exposure == "Prone sleeping position" ~ "Prone sleeping \nposition",
     Exposure == "Smoking during pregnancy" ~ "Smoking during \npregnancy",
+    Exposure == "Not sharing parental bedroom" ~ "Not sharing \nparental bedroom",
     TRUE ~ Exposure))
 
 order <- c("Not breast feeding \nat any stage of life", "Prone sleeping \nposition",
-           "Bed sharing", "Smoking during \npregnancy")
+           "Bed sharing", "Not sharing \nparental bedroom",
+           "Smoking during \npregnancy")
 
 paf$Exposure <- factor(paf$Exposure, levels = order)
 
 paf_plot <- ggplot(data = paf) +
   geom_bar(aes(x = PAF, y = Exposure, fill = Study), 
            alpha = 0.7, color = "black",
-           stat = "identity", position = "dodge") +
+           stat = "identity",
+           position = position_dodge2(padding = 0, preserve = "single")) +
   scale_fill_manual(values = c("#0073C2FF", "#868686FF")) +
   scale_color_manual(values = c("#0073C2FF", "#868686FF")) +
   ylab("Population Attributable Fraction (%)") +
@@ -36,13 +39,15 @@ paf_table <- paf %>%
   select(-c("OR", "pc")) %>%
   pivot_wider(names_from = Study, values_from = "PAF") %>%
   select("Exposure", "Mitchell 1992", "Mitchell 2017") %>%
-  mutate_if(is.numeric, round, digits = 2)
+  mutate_if(is.numeric, round, digits = 2) %>%
+  replace(is.na(.), "-")
 
 or_table <- paf %>%
   select(-c("PAF", "pc")) %>%
   pivot_wider(names_from = Study, values_from = "OR") %>%
   select("Exposure", "Mitchell 1992", "Mitchell 2017") %>%
-  mutate_if(is.numeric, round, digits = 2)
+  mutate_if(is.numeric, round, digits = 2) %>%
+  replace(is.na(.), "-")
 
 
 paf_table_p <- ggtexttable(paf_table, rows = NULL, 
