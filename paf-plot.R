@@ -10,12 +10,12 @@ paf %<>%
   mutate(Exposure = case_when(
     Exposure == "Not breast feeding at any stage of life" ~
     "Not breast feeding \nat any stage of life",
-    Exposure == "Prone sleeping position" ~ "Prone sleeping \nposition",
+    Exposure == "Prone sleeping position" ~ "Prone sleeping \nposition *",
     Exposure == "Smoking during pregnancy" ~ "Smoking during \npregnancy",
     Exposure == "Not sharing parental bedroom" ~ "Not sharing \nparental bedroom",
     TRUE ~ Exposure))
 
-order <- c("Not breast feeding \nat any stage of life", "Prone sleeping \nposition",
+order <- c("Not breast feeding \nat any stage of life", "Prone sleeping \nposition *",
            "Not sharing \nparental bedroom", "Bed sharing",
            "Smoking during \npregnancy")
 
@@ -83,5 +83,5 @@ paf_comb_p <- ggarrange(paf_plot,
                     vjust = c(1, 1)),
           ncol = 2)
 
-ggsave(filename = "paf_plot.png", plot = paf_comb_p, path = here::here("out"),
+ggsave(filename = "paf-plot.png", plot = paf_comb_p, path = here::here("out"),
        width = 23, height = 15, units = "cm")
