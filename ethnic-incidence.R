@@ -55,12 +55,41 @@ SUDI_inc <- ggplot(data = df,
   theme(panel.grid.major.y = element_line(color = "grey80",
                                           linetype = "longdash"))
 
-comb_plot <- ggarrange(SIDS_inc, SUDI_inc,
+comb_inc_plot <- ggarrange(SIDS_inc, SUDI_inc,
           ncol = 1,
           align = "h",
           common.legend = TRUE,
           labels = c("A", "B"))
 
-ggsave(filename = "inc.png", plot = comb_plot, path = here::here("out"),
+ggsave(filename = "eth_inc.png", plot = comb_inc_plot, path = here::here("out"),
        width = 16, height = 18, units = "cm")  
 
+
+# SUDI Incidence and SIDS and SUDI Count ----------------------------------
+
+count_df <- df %>%
+  filter(`Ethnic Group` == "Total") %>%
+  select(Year, `SUDI deaths`, `SIDS deaths`) %>%
+  pivot_longer(cols = c(`SUDI deaths`, `SIDS deaths`),
+               names_to = "Type", values_to = "Number")
+
+count_plot <- ggplot(data = count_df) +
+  geom_bar(aes(x = Year, y = Number, fill = Type),
+           alpha = 0.7, color = "black",
+           stat = "identity", position = "dodge") +
+  scale_fill_manual(values = c("#0073C2FF", "#868686FF")) +
+  scale_color_manual(values = c("#0073C2FF", "#868686FF")) +
+  theme_pubr() +
+  theme(panel.grid.major.y = element_line(color = "grey80",
+                                          linetype = "dashed"),
+        axis.title.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text.x = element_blank())
+
+comb_count_plot <- ggarrange(count_plot, SUDI_inc,
+                           ncol = 1,
+                           align = "h",
+                           labels = c("A", "B"))
+
+ggsave(filename = "count_inc.png", plot = comb_count_plot, path = here::here("out"),
+       width = 17, height = 18, units = "cm")
