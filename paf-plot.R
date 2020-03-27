@@ -42,23 +42,31 @@ paf_plot <- ggplot(data = paf) +
 # PAF Table ---------------------------------------------------------------
 
 paf_table <- paf %>%
-  select(-c("OR", "pc")) %>%
+  select(-c(pc:`Upper CI`)) %>%
   pivot_wider(names_from = Study, values_from = "PAF") %>%
   select("Exposure", "Mitchell 1992", "Mitchell 2017") %>%
   mutate_if(is.numeric, round, digits = 2) %>%
-  replace(is.na(.), "-")
+  replace(is.na(.), "-") %>%
+  arrange(desc(Exposure))
 
 
 # OR Table ----------------------------------------------------------------
 
 table_df <- paf %>%
   mutate_if(is.numeric, round, digits = 2) %>%
-  mutate(OR = paste0(sprintf("%.2f", OR), " (", sprintf("%.2f",`Lower CI`), ", ", sprintf("%.2f",`Upper CI`), ")"))
+  mutate(OR = paste0(
+    sprintf("%.2f", OR), 
+    " (", 
+    sprintf("%.2f",`Lower CI`), 
+    ", ", 
+    sprintf("%.2f",`Upper CI`), 
+    ")"))
 
 or_table <- table_df %>%
   select(-c(pc, `Lower CI`:PAF)) %>%
   pivot_wider(names_from = Study, values_from = "OR") %>%
-  replace(is.na(.), "-")
+  replace(is.na(.), "-") %>%
+  arrange(desc(Exposure))
 
 paf_table_p <- ggtexttable(paf_table, rows = NULL, 
             theme = ttheme("default"))
@@ -66,7 +74,7 @@ paf_table_p <- ggtexttable(paf_table, rows = NULL,
 or_table_p <- ggtexttable(or_table, rows = NULL, 
                            theme = ttheme("default"))
 
-ggarrange(paf_plot, 
+paf_comb_p <- ggarrange(paf_plot, 
           ggarrange(paf_table_p, or_table_p, 
                     nrow = 2,
                     labels = c("Population Attributable Fraction (%)",
@@ -75,3 +83,5 @@ ggarrange(paf_plot,
                     vjust = c(1, 1)),
           ncol = 2)
 
+ggsave(filename = "paf_plot.png", plot = paf_comb_p, path = here::here("out"),
+       width = 23, height = 15, units = "cm")
