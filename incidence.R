@@ -4,8 +4,7 @@ library(magrittr)
 library(ggpubr)
 library(ggsci)
 
-
-df <- read_excel(here::here("data", "incidence.xlsx"))
+df <- read_excel(here::here("data", "incidence.xlsx"), sheet = "Total")
 
 count_df <- select(df, -`Live births`)
 

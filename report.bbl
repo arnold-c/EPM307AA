@@ -1,0 +1,217 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Mitchellcombinationbedsharing2017}{article}{}
+      \name{author}{13}{}{%
+        {{hash=ae586d12577e8eb5d6ca832edb0228ce}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={Edwin\bibnamedelima A},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=80c58081ceabf114c9a383d2ec47fb76}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3b1b91e5a8248bd6691724dcee555b70}{%
+           family={Zuccollo},
+           familyi={Z\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c2e025b785d8b091ef812c1d91ba86cb}{%
+           family={MacFarlane},
+           familyi={M\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c37f61eeb0e308b3b1aa96c0becb8d37}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Barry},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f318c97905822c51291b55cc806e58a2}{%
+           family={Elder},
+           familyi={E\bibinitperiod},
+           given={Dawn},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7e1c63d94d2d09788755dc0af413f5c3}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Alistair\bibnamedelima W},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=e924315f892e54ce97afb5abd1cb14fd}{%
+           family={Percival},
+           familyi={P\bibinitperiod},
+           given={Teuila},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6d3e30e0512de4b419541d19c2e88699}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=cc46612bcd54ab56ffc550dfa139aab2}{%
+           family={McDonald},
+           familyi={M\bibinitperiod},
+           given={Gabrielle},
+           giveni={G\bibinitperiod}}}%
+        {{hash=53b5282c1fb805595f185ede020798f4}{%
+           family={Lawton},
+           familyi={L\bibinitperiod},
+           given={Beverley},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7f04adf529686d7dee3d3a39f564b9a5}{%
+           family={Schlaud},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f983a98f19f604fe7327b01f69c57e30}{%
+           family={Fleming},
+           familyi={F\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a09282aa15aab8908423a777da208f9}
+      \strng{fullhash}{375fc2702cfdec76088e77e72a573080}
+      \strng{bibnamehash}{5a09282aa15aab8908423a777da208f9}
+      \strng{authorbibnamehash}{5a09282aa15aab8908423a777da208f9}
+      \strng{authornamehash}{5a09282aa15aab8908423a777da208f9}
+      \strng{authorfullhash}{375fc2702cfdec76088e77e72a573080}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{BACKGROUND: Despite a major reduction in overall infant mortality, sudden unexpected death in infancy (SUDI) continues to be of concern in New Zealand, as the rate is high by international standards, and is even higher in indigenous Māori. AIM: To identify modifiable risk factors for SUDI. METHODS: A three-year (1 March 2012–28 February 2015) nationwide case-control study was conducted in New Zealand. RESULTS: There were 137 SUDI cases, giving a SUDI mortality rate of 0.76/1,000 live births. The rate for Māori was 1.41/1,000, Pacific 1.01/1,000 and non-Māori non-Pacific (predominantly European) 0.50/1,000. The parent(s) of 97\% of the SUDI cases were interviewed. Six hundred and forty-nine controls were selected and 258 (40\%) were interviewed. The two major risk factors for SUDI were: maternal smoking in pregnancy (adjusted OR=6.01, 95\% CI=2.97, 12.15) and bed sharing (aOR=4.96, 95\% CI=2.55, 9.64). There was a significant interaction (p=0.002) between bed sharing and antenatal maternal smoking. Infants exposed to both risk factors had a markedly increased risk of SUDI (aOR=32.8, 95\% CI=11.2, 95.8) compared with infants not exposed to either risk factor. Infants not sharing the parental bedroom were also at increased risk of SUDI (aOR=2.77, 95\% CI=1.45, 5.30). Just 21 cases over the three-year study were not exposed to smoking in pregnancy, bed sharing or front or side sleeping position. CONCLUSIONS: This study has shown that many of the risk factors that were identified in the original New Zealand Cot Death Study (1987–1989) are still relevant today. The combination of maternal smoking in pregnancy and bed sharing is extremely hazardous for infants. Furthermore, our findings indicate that the SUDI prevention messages are still applicable today and should be reinforced. SUDI mortality could be reduced to just seven p.a. in New Zealand (approximately one in 10,000 live births).}
+      \field{langid}{english}
+      \field{number}{1456}
+      \field{title}{The Combination of Bed Sharing and Maternal Smoking Leads to a Greatly Increased Risk of Sudden Unexpected Death in Infancy: The {{New Zealand SUDI Nationwide Case Control Study}}}
+      \field{volume}{130}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{13}
+      \range{pages}{1}
+      \verb{file}
+      \verb C\:\\Users\\owner\\OneDrive\\Documents\\Zotero\\Zotfile\\Mitchell et al_2017_The combination of bed sharing and maternal smoking leads to a greatly.pdf
+      \endverb
+    \endentry
+    \entry{MitchellFourmodifiableother1992}{article}{}
+      \name{author}{11}{}{%
+        {{hash=ec65a0bfba0fb14834c3146d8a014144}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9fffa327c1a800581b3f2dc7b1833ddd}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={B.\bibnamedelimi J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4b9b1d9b5e14ee5a3a11a50dad62382b}{%
+           family={Ford},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi P.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=7503fcdd8a5100d8059c87d15aa47dec}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=60e37866b76e62211ea5823923545da4}{%
+           family={Becroft},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi M.\bibnamedelimi O.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=7c2a26ecd5cbfd2a390f91429149fa82}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi M.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=7607e4d6b4e9ec977000500bf13c335f}{%
+           family={Scragg},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cec2d9f9cf8f6b0c0ea45edd70f5a73f}{%
+           family={Hassall},
+           familyi={H\bibinitperiod},
+           given={I.\bibnamedelimi B.},
+           giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=5ad75e6bd550513116cc74f952c91146}{%
+           family={Barry},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi M.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0ee3bf0ce264c1f51dc69cfe8a65cc88}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={E.\bibnamedelimi M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=01b9efd5f438dd6e47aa952727ce2d9b}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={A.\bibnamedelimi P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{2958bf2edd414a87f4f2861b401b2596}
+      \strng{fullhash}{6b4a43ac5bd65393e293be012ff8c782}
+      \strng{bibnamehash}{2958bf2edd414a87f4f2861b401b2596}
+      \strng{authorbibnamehash}{2958bf2edd414a87f4f2861b401b2596}
+      \strng{authornamehash}{2958bf2edd414a87f4f2861b401b2596}
+      \strng{authorfullhash}{6b4a43ac5bd65393e293be012ff8c782}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{New Zealand's high mortality rate from sudden infant death syndrome (SIDS) prompted the development of the New Zealand Cot Death Study. A report of the analysis of the data from the first year has been published. This report now gives the major identified risk factors from the full 3 year data set. In this case-control study there were 485 infants who died from SIDS in the post-neonatal age group, and 1800 control infants, who were a representative sample of all hospital births in the study region. Obstetric records were examined and parental interviews were completed in 97.5\% and 86.9\% of subjects, respectively. As expected many risk factors for SIDS were confirmed including: lower socio-economic status, unmarried mother, young mother, younger school-leaving age of mother, younger age of mother at first pregnancy, late attendance at antenatal clinic, non-attendance at antenatal classes, Maori, greater number of previous pregnancies, the further south the domicile, winter, low birthweight, short gestation, male infant and admission to a special care baby unit. In addition, however, we identified four risk factors that are potentially amenable to modification. These were the prone sleeping position of the baby (odds ratio (OR) = 3.70; 95\% confidence interval (Cl) = 2.91, 4.70); bed sharing (OR = 2.70; 95\% Cl = 2.02, 3.62); maternal smoking of 1–9 cigarettes per day (OR = 3.47; 95\% Cl = 2.50, 4.83), 10–19 cigarettes per day (OR = 3.94; 95\% Cl = 2.87, 5.41) or more than 20 cigarettes per day (OR = 5.90; 95\% Cl = 4.20, 8.31); and not breast feeding (OR = 2.39; 95\% Cl = 1.88, 3.04). After controlling for all of the above variables, the relative risks associated with prone sleeping position (OR = 4.84). sharing bed (OR = 2.02), maternal smoking (OR = 1.79) and not breast feeding (OR = 1.89) were still statistically significant. Population-attributable risk calculations suggest that these four risk factors may account for 82\% of deaths from SIDS. The SIDS mortality rate may fall to less than 0.7/1000 live births if all parents stop putting their infants down to sleep in the prone position, do not sleep with their baby, do not smoke, and breast feed their infants.}
+      \field{issn}{1440-1754}
+      \field{journaltitle}{J. Paediatr. Child Health}
+      \field{langid}{english}
+      \field{note}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1440-1754.1992.tb02729.x}
+      \field{number}{s1}
+      \field{shorttitle}{Four Modifiable and Other Major Risk Factors for Cot Death}
+      \field{title}{Four Modifiable and Other Major Risk Factors for Cot Death: {{The New Zealand}} Study}
+      \field{urlday}{7}
+      \field{urlmonth}{3}
+      \field{urlyear}{2020}
+      \field{volume}{28}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{S3\bibrangedash S8}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1111/j.1440-1754.1992.tb02729.x
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\owner\\OneDrive\\Documents\\Zotero\\Zotfile\\Mitchell et al_1992_Four modifiable and other major risk factors for cot death.pdf;C\:\\Users\\owner\\Zotero\\storage\\2PI7KIN2\\j.1440-1754.1992.tb02729.html
+      \endverb
+      \verb{urlraw}
+      \verb http://onlinelibrary.wiley.com/doi/abs/10.1111/j.1440-1754.1992.tb02729.x
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/abs/10.1111/j.1440-1754.1992.tb02729.x
+      \endverb
+      \keyw{breast feeding (non),case-control study,infant care practices,maternal smoking,sleep position of baby,sudden infant death syndrome}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

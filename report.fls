@@ -1,0 +1,126 @@
+PWD c:\Users\owner\Documents\Repos\EPM307AA
+INPUT C:\Users\owner\AppData\Local\MiKTeX\2.9\miktex\data\le\xetex\xelatex.fmt
+INPUT c:\Users\owner\Documents\Repos\EPM307AA\report.tex
+OUTPUT report.log
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex
+INPUT .\nul:.tex
+INPUT .\nul:.tex
+INPUT .\nul:.tex
+INPUT .\nul:.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\unicode-data\UnicodeData.txt
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\unicode-data\UnicodeData.txt
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\unicode-data\CaseFolding.txt
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\unicode-data\CaseFolding.txt
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\unicode-data\SpecialCasing.txt
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\unicode-data\SpecialCasing.txt
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3deprecation.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3deprecation.def
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\latex\l3backend\l3backend-xdvipdfmx.def
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\latex\l3backend\l3backend-xdvipdfmx.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec-xetex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec-xetex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\tuenc.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\tuenc.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\tuenc.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\owner\AppData\Roaming\MiKTeX\2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-unicode.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-unicode.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\unicode-data\UnicodeData.txt
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex-nature\nature.cbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex-nature\nature.cbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric-comp.cbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric-comp.cbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty
+INPUT report.aux
+INPUT report.aux
+OUTPUT report.aux
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+OUTPUT report.bcf
+INPUT report.bbl
+INPUT report.bbl
+INPUT report.bbl
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+OUTPUT report.xdv
+INPUT report.aux
+INPUT report.run.xml
+OUTPUT report.run.xml
