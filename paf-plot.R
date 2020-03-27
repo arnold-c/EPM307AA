@@ -21,6 +21,9 @@ order <- c("Not breast feeding \nat any stage of life", "Prone sleeping \npositi
 
 paf$Exposure <- factor(paf$Exposure, levels = order)
 
+
+# PAF Bar Plot ------------------------------------------------------------
+
 paf_plot <- ggplot(data = paf) +
   geom_bar(aes(x = PAF, y = Exposure, fill = Study), 
            alpha = 0.7, color = "black",
@@ -36,6 +39,8 @@ paf_plot <- ggplot(data = paf) +
         panel.grid.minor.x = element_line(color = "grey80",
                                           linetype = "dashed"))
 
+# PAF Table ---------------------------------------------------------------
+
 paf_table <- paf %>%
   select(-c("OR", "pc")) %>%
   pivot_wider(names_from = Study, values_from = "PAF") %>%
@@ -43,13 +48,17 @@ paf_table <- paf %>%
   mutate_if(is.numeric, round, digits = 2) %>%
   replace(is.na(.), "-")
 
-or_table <- paf %>%
-  select(-c("PAF", "pc")) %>%
-  pivot_wider(names_from = Study, values_from = "OR") %>%
-  select("Exposure", "Mitchell 1992", "Mitchell 2017") %>%
-  mutate_if(is.numeric, round, digits = 2) %>%
-  replace(is.na(.), "-")
 
+# OR Table ----------------------------------------------------------------
+
+table_df <- paf %>%
+  mutate_if(is.numeric, round, digits = 2) %>%
+  mutate(OR = paste0(sprintf("%.2f", OR), " (", sprintf("%.2f",`Lower CI`), ", ", sprintf("%.2f",`Upper CI`), ")"))
+
+or_table <- table_df %>%
+  select(-c(pc, `Lower CI`:PAF)) %>%
+  pivot_wider(names_from = Study, values_from = "OR") %>%
+  replace(is.na(.), "-")
 
 paf_table_p <- ggtexttable(paf_table, rows = NULL, 
             theme = ttheme("default"))
