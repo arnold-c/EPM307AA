@@ -149,10 +149,10 @@ aor_comb_p <- ggarrange(paf_plot,
                                   nrow = 2,
                                   labels = c("Odds Ratio (Multivariate)",
                                              "Odds Ratio (Univariate)"),
-                                  hjust = c(-0.55, -0.6),
-                                  vjust = c(2.5, 1)),
+                                  hjust = c(-0.69, -0.75),
+                                  vjust = c(1.3, 1)),
                         ncol = 2)
 
 ggsave(filename = "paf-aor-plot.png", plot = aor_comb_p, path = here::here("out"),
-       width = 23, height = 15, units = "cm")
+       width = 27, height = 15, units = "cm")
 
