@@ -29,7 +29,7 @@ df %<>%
 
 # Incidence Plot ----------------------------------------------------------
 
-SIDS_inc <- ggplot(data = df,
+SIDS_eth_inc <- ggplot(data = df,
                    mapping = aes(x = Year, y = `SIDS rate`,
                                  color = `Ethnic Group`)) +
   geom_line(aes(group = `Ethnic Group`),
@@ -50,7 +50,7 @@ SIDS_inc <- ggplot(data = df,
     axis.text.x = element_blank()
   )
 
-SUDI_inc <- ggplot(data = df,
+SUDI_eth_inc <- ggplot(data = df,
                    mapping = aes(x = Year, y = `SUDI rate`,
                                  color = `Ethnic Group`)) +
   geom_line(aes(group = `Ethnic Group`),
@@ -67,8 +67,8 @@ SUDI_inc <- ggplot(data = df,
                                           linetype = "longdash"))
 
 comb_inc_plot <- ggarrange(
-  SIDS_inc,
-  SUDI_inc,
+  SIDS_eth_inc,
+  SUDI_eth_inc,
   ncol = 1,
   align = "h",
   common.legend = TRUE,
@@ -109,10 +109,7 @@ count_plot <- ggplot(data = count_df) +
   theme_pubr() +
   theme(
     panel.grid.major.y = element_line(color = "grey80",
-                                      linetype = "dashed"),
-    axis.title.x = element_blank(),
-    axis.ticks.x = element_blank(),
-    axis.text.x = element_blank()
+                                      linetype = "dashed")
   )
 
 comb_count_plot <- ggarrange(
@@ -131,3 +128,30 @@ ggsave(
   height = 18,
   units = "cm"
 )
+
+# Incidence and SUDI ethnic breakdown -------------------------------------
+
+inc_df <- df %>%
+  filter(`Ethnic Group` == "Total") %>%
+  select(Year, `SUDI rate`, `SIDS rate`) %>%
+  pivot_longer(
+    cols = c(`SUDI rate`, `SIDS rate`),
+    names_to = "Type",
+    values_to = "Rate"
+  )
+
+inc_bar_plot <- ggplot(data = inc_df) +
+  geom_bar(
+    aes(x = Year, y = Rate, fill = Type),
+    alpha = 0.7,
+    color = "black",
+    stat = "identity",
+    position = "dodge"
+  ) +
+  scale_fill_manual(values = c("#0073C2FF", "#868686FF")) +
+  scale_color_manual(values = c("#0073C2FF", "#868686FF")) +
+  theme_pubr() +
+  theme(
+    panel.grid.major.y = element_line(color = "grey80",
+                                      linetype = "dashed")
+  )
