@@ -148,6 +148,7 @@ inc_bar_plot <- ggplot(data = inc_df) +
     stat = "identity",
     position = "dodge"
   ) +
+  ylim(0, 1.15) +
   ylab("Rate (per 1000 live births)") +
   scale_fill_manual(values = c("#0073C2FF", "#868686FF")) +
   scale_color_manual(values = c("#0073C2FF", "#868686FF")) +
