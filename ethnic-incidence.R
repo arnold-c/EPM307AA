@@ -66,7 +66,7 @@ SUDI_eth_inc <- ggplot(data = df,
   theme(panel.grid.major.y = element_line(color = "grey80",
                                           linetype = "longdash"))
 
-comb_inc_plot <- ggarrange(
+comb_eth_inc_plot <- ggarrange(
   SIDS_eth_inc,
   SUDI_eth_inc,
   ncol = 1,
@@ -148,6 +148,7 @@ inc_bar_plot <- ggplot(data = inc_df) +
     stat = "identity",
     position = "dodge"
   ) +
+  ylab("Rate (per 1000 live births)") +
   scale_fill_manual(values = c("#0073C2FF", "#868686FF")) +
   scale_color_manual(values = c("#0073C2FF", "#868686FF")) +
   theme_pubr() +
@@ -155,3 +156,21 @@ inc_bar_plot <- ggplot(data = inc_df) +
     panel.grid.major.y = element_line(color = "grey80",
                                       linetype = "dashed")
   )
+
+comb_inc_plot <- ggarrange(
+  inc_bar_plot,
+  SUDI_inc,
+  ncol = 1,
+  align = "h",
+  labels = c("A", "B")
+)
+
+
+ggsave(
+  filename = "incidence.png",
+  plot = comb_inc_plot,
+  path = here::here("out"),
+  width = 17,
+  height = 18,
+  units = "cm"
+)
