@@ -51,8 +51,8 @@ SIDS_eth_inc <- ggplot(data = df,
   )
 
 SUDI_eth_inc <- ggplot(data = df,
-                   mapping = aes(x = Year, y = `SUDI rate`,
-                                 color = `Ethnic Group`)) +
+                       mapping = aes(x = Year, y = `SUDI rate`,
+                                     color = `Ethnic Group`)) +
   geom_line(aes(group = `Ethnic Group`),
             size = 2) +
   geom_point(size = 4) +
@@ -63,8 +63,11 @@ SUDI_eth_inc <- ggplot(data = df,
   )) +
   ylab("Rate (per 1000 live births)") +
   theme_pubr() +
-  theme(panel.grid.major.y = element_line(color = "grey80",
-                                          linetype = "longdash"))
+  theme(
+    panel.grid.major.y = element_line(color = "grey80",
+                                      linetype = "longdash"),
+    legend.text = element_text(size = 12)
+  )
 
 comb_eth_inc_plot <- ggarrange(
   SIDS_eth_inc,
@@ -155,7 +158,8 @@ inc_bar_plot <- ggplot(data = inc_df) +
   theme_pubr() +
   theme(
     panel.grid.major.y = element_line(color = "grey80",
-                                      linetype = "dashed")
+                                      linetype = "dashed"),
+    legend.text = element_text(size = 12)
   )
 
 comb_inc_plot <- ggarrange(
