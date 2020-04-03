@@ -21,6 +21,7 @@ paf %<>%
     )
   )
 
+
 paf_order <-
   c(
     "Not breast feeding \nat any stage of life",
@@ -39,15 +40,15 @@ aor %<>%
         "Not breast feeding \nat any stage of life",
       Exposure == "Not exclusively breast feeding on discharge" ~
         "Not exclusively breast \nfeeding on discharge",
-      Exposure == "Prone sleeping position relative to other" ~ 
+      Exposure == "Prone sleeping position relative to other" ~
         "Prone sleeping position \nrelative to other",
-      Exposure == "Prone sleeping position relative to back" ~ 
+      Exposure == "Prone sleeping position relative to back" ~
         "Prone sleeping position \nrelative to back",
-      Exposure == "Smoking during pregnancy" ~ 
+      Exposure == "Smoking during pregnancy" ~
         "Smoking during \npregnancy",
-      Exposure == "Smoking during final 2w of pregnancy" ~ 
+      Exposure == "Smoking during final 2w of pregnancy" ~
         "Smoking during final \n2w of pregnancy",
-      Exposure == "Not sharing parental bedroom" ~ 
+      Exposure == "Not sharing parental bedroom" ~
         "Not sharing \nparental bedroom",
       TRUE ~ Exposure
     )
@@ -148,7 +149,7 @@ paf_comb_p <- ggarrange(
       "Population Attributable Fraction (%)",
       "Odds Ratio (Univariate)"
     ),
-    hjust = c(-0.17,-0.6),
+    hjust = c(-0.17, -0.6),
     vjust = c(1, 1)
   ),
   ncol = 2
@@ -207,7 +208,7 @@ aor_comb_p <- ggarrange(
     nrow = 2,
     labels = c("Odds Ratio (Multivariate)",
                "Odds Ratio (Univariate)"),
-    hjust = c(-0.69,-0.75),
+    hjust = c(-0.69, -0.75),
     vjust = c(1.3, 1)
   ),
   ncol = 2
