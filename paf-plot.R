@@ -191,14 +191,13 @@ ggsave(
   plot = aor_table_p,
   path = here::here("out"),
   width = 12,
-  height = 15,
+  height = 10.5,
   units = "cm"
 )
 
 
 
 # PAF and aOR Plot --------------------------------------------------------
-
 
 aor_comb_p <- ggarrange(
   paf_plot,
