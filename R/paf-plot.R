@@ -88,15 +88,19 @@ paf_plot <- ggplot(data = paf) +
     panel.grid.major.x = element_line(color = "grey80",
                                       linetype = "dashed"),
     panel.grid.minor.x = element_line(color = "grey80",
-                                      linetype = "dashed")
-  )
+                                      linetype = "dashed"),
+    legend.text = element_text(size = 12),
+    legend.position = c(0.3, 1.05),
+    legend.direction = "horizontal",
+    plot.margin = unit(c(1.2, 0.15, 0.15, 0.15), "cm")
+  ) 
 
 ggsave(
   filename = "paf-plot.png",
   plot = paf_plot,
   path = here::here("out"),
-  width = 15,
-  height = 15,
+  width = 11,
+  height = 11,
   units = "cm"
 )
 
